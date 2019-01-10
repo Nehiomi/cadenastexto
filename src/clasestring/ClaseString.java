@@ -76,5 +76,38 @@ public class ClaseString {
         String mayusculas = s2.toUpperCase();
         System.out.println("s2 en mayúsculas: " + mayusculas);
         System.out.println("String mayusculas en minúsculas " + mayusculas.toLowerCase());
+        
+        // Método que nos quita los espacios por delante y por detrás (no en medio)
+        String espacios = " palabra palabra ";
+        System.out.println("Tamaño de espacios: " + espacios.length());
+        String sinEspacios = espacios.trim();
+        System.out.println("Tamaño de sinEspacios: " + sinEspacios.length());
+        
+        // Reemplazo de caracteres
+        System.out.println("String original: " +  s2);
+        String str2 = s2.replace('a', 'x');
+        System.out.println("String reemplazado: " + str2);
+        
+        // Contenido - Me dice si está o no está en el contenido.
+        String aBuscar = "dealbo";
+        System.out.println("¿Contiene " + s2 + " la subcadena " + aBuscar + "? " + s2.contains(aBuscar));
+        
+        // Probar métodos endsWith, startsWith, isEmpty
+        
+        
+        // Obtener un array de char de la cadena
+        // Todo el array tiene que tener el mismo tipo de dato (en este caso char)
+        // Declaración de una variable array de tipo char
+        char[] arrayChar;
+        arrayChar = s2.toCharArray();
+        
+        // Aquí length es un atributo del array - diferente al lengt de los String
+        // El atributo length exite en todos los arrays y me indica su tamaño
+        // equivalente al método length de los String. Se diferencian en que uno
+        // es un método y otro es un atributo.
+        for(int i = 0; i<arrayChar.length; i++){
+            //Para acceder a cada posición del array uso los corchetes
+            System.out.println("Posición i = " + i + " contenido = " + arrayChar[i]);
+        }
     }
 }
