@@ -39,5 +39,22 @@ public class ClaseString {
         String nuevo2 = s1.concat(s2);
         System.out.println("Nuevo: " + nuevo);
         System.out.println("Nuevo2: " + nuevo2);
+        
+        // Devuelve el índice dentro de la cadena
+        // de la primera aparición de la cadena a buscar
+        // Este método me busca la palabra alboran (string) que le digo dentro de nuevo
+        // y me da la posición donde empieza.
+        // Tiene en cuenta mayúsculas y minúsculas - Si no existe me da negativo.
+        int indice = nuevo.indexOf("alboran");
+        System.out.println("Indice: " + indice);
+        
+        // Empieza a buscar lo que le señalo, en este caso "ran", a partir de 
+        //la posición que le marco, en este caso 10.
+        indice = nuevo.indexOf("ran", 10);
+        System.out.println("Indice: " + indice);
+        
+        // Métodos equals y equalsIgnoreCase
+        System.out.println("Igualdad Java y java: " + "Java".equals("java"));
+        System.out.println("Igualdad Java y java: " + "Java".equalsIgnoreCase("java"));
     }
 }
