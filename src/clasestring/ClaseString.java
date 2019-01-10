@@ -92,7 +92,17 @@ public class ClaseString {
         String aBuscar = "dealbo";
         System.out.println("¿Contiene " + s2 + " la subcadena " + aBuscar + "? " + s2.contains(aBuscar));
         
-        // Probar métodos endsWith, startsWith, isEmpty
+        // Método endsWith
+        // Verifica si la cadena termina con la subcadena especificada por 
+        // el usuario o no. En función de esta comparación, devolverá booleano 
+        // Verdadero o Falso.
+        String end = "Everything happen for a reason";
+         // Comprobar si termina con una secuencia particular  
+        System.out.println("EndsWith character 'n':" + end.endsWith("n"));       
+        System.out.println("EndsWith character 'reason':" + end.endsWith("reason"));       
+        System.out.println("EndsWith character 'nothing':" + end.endsWith("nothing"));   
+        
+        //Métodos startsWith, isEmpty
         
         
         // Obtener un array de char de la cadena
